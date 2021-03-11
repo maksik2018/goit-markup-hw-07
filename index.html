@@ -9,38 +9,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="site-header">
+      <div class="container site-header__container">
         <nav class="nav">
-          <a href="./index.html" class="logo"
-            ><span class="web">Web</span
-            ><span class="header-studio">Studio</span></a
+          <a href="./index.html" class="logo site-header--logo"
+            ><span class="logo--left">Web</span
+            ><span class="logo--right">Studio</span></a
           >
 
-          <ul class="nav-links">
-            <li><a href="#" class="menu-link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
-            <li><a href="#" class="menu-link">Контакты</a></li>
+          <ul class="site-menu">
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link site-menu__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="site-menu__item">
+              <a href="./portfolio.html" class="site-menu__link">Портфолио</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="nav-contacts">
-          <li>
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="envelope">
+          <li class="nav-contacts__item">
+            <a class="nav-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="nav-contacts__icon" width="16" height="12">
                 <use href="./image/symbol-defs.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="link" href="tel:+380961111111">
-              <svg class="phone">
+          <li class="nav-contacts__item">
+            <a class="nav-contacts__link" href="tel:+380961111111">
+              <svg class="nav-contacts__icon" width="10" height="16">
                 <use href="./image/symbol-defs.svg#phone"></use>
               </svg>
 
@@ -366,23 +374,23 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer container">
+      <div class="container footer__container">
         <div class="footer-address">
           <a href="./index.html" class="logo"
-            ><span class="web">Web</span
-            ><span class="footer-studio">Studio</span></a
+            ><span class="logo--left">Web</span
+            ><span class="logo--footer">Studio</span></a
           >
 
           <address>
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer list">
-              <li>
-                <a href="mailto:info@example.com" class="footer-link"
+            <ul class="address__list">
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__link"
                   >info@example.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+380991111111:" class="footer-link"
+              <li class="address__item">
+                <a href="tel:+380991111111:" class="address__link"
                   >+38 099 111 11 11</a
                 >
               </li>

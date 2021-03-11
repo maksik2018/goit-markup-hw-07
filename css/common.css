@@ -60,7 +60,7 @@ p {
 
 /* header start */
 .nav,
-.nav-links,
+.site-menu,
 .nav-contacts {
   display: flex;
 }
@@ -70,21 +70,21 @@ p {
   align-items: center;
 }
 
-.nav-links {
+.site-menu {
   display: flex;
   justify-content: space-between;
   margin-left: 93px;
 }
 
-.nav-links li {
+.site-menu__item {
   margin-right: 50px;
 }
 
-.nav-links li:last-child {
+.site-menu__item:last-child {
   margin-right: 0;
 }
 
-.menu-link {
+.site-menu__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -94,8 +94,8 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.site-menu__link:hover,
+.site-menu__link:focus {
   color: var(--primary-blue);
 }
 
@@ -119,12 +119,12 @@ p {
   opacity: 1;
 } */
 
-.menu-link.current {
+.site-menu__link--current {
   color: var(--primary-blue);
   position: relative;
 }
 
-.menu-link.current::after {
+.site-menu__link--current::after {
   content: '';
   display: block;
   width: 100%;
@@ -143,11 +143,11 @@ p {
   justify-content: space-between;
 }
 
-.nav-contacts li:not(:last-child) {
+.nav-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-contacts .link {
+.nav-contacts__link {
   display: flex;
   align-items: center;
   margin: 0;
@@ -162,68 +162,18 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.nav-contacts .link:hover,
-.nav-contacts .link:focus {
+.nav-contacts__link:hover,
+.nav-contacts__link:focus {
   color: var(--primary-blue);
 }
 
-.header .container {
+.site-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.web {
-  color: var(--primary-blue);
-}
-
-.header-studio {
-  color: var(--hdr-text-black);
-}
-
-.link .envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: center;
-}
-
-.link .phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: center;
-}
-
-/* header finish */
-
-/* footer start */
-
-footer {
-  background-color: var(--bg-black);
-}
-
-.footer.container {
-  display: flex;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer .logo {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -231,6 +181,61 @@ footer {
   letter-spacing: 0.03em;
   display: inline-block;
 }
+
+.site-header--logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--left {
+  color: var(--primary-blue);
+}
+
+.logo--right {
+  color: var(--hdr-text-black);
+}
+
+.nav-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
+}
+
+/* .link .phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
+} */
+
+/* header finish */
+
+/* footer start */
+
+.footer {
+  background-color: var(--bg-black);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-studio {
+  color: var(--primary-white);
+}
+
+/* .footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  display: inline-block;
+} */
 
 .address {
   font-weight: 400;
@@ -242,11 +247,11 @@ footer {
   margin-top: 20px;
 }
 
-.footer.list li {
+.address__item {
   margin-top: 9px;
 }
 
-.footer-link {
+.address__link {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -256,12 +261,12 @@ footer {
   transition: 250ms var(--timing-function);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--primary-blue);
 }
 
-.footer-studio {
+.logo--footer {
   color: var(--primary-white);
 }
 
@@ -313,8 +318,6 @@ footer {
 
 .footer-data {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .footer-input {
