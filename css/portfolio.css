@@ -9,30 +9,26 @@
   --ftr-text-grey-op60: rgba(255, 255, 255, 0.6);
 }
 
-.header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
-
-.portfolio .container {
+.portfolio__container {
   padding-top: 100px;
   padding-bottom: 94px;
 }
 
-.portfolio-button {
+.button {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.portfolio-button > li {
+.button__item {
   margin-right: 8px;
 }
 
-.portfolio-button > li:last-child {
+.button__item:last-child {
   margin-right: 0;
 }
 
-.btn-title {
+.button__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -47,9 +43,9 @@
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.btn-title:hover,
-.btn-title:focus,
-.btn-title:active {
+.button__title:hover,
+.button__title:focus,
+.button__title:active {
   background-color: var(--primary-blue);
   color: var(--primary-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -65,7 +61,7 @@
   margin-left: -30px;
 }
 
-.examples li {
+.examples__item {
   flex-basis: calc (100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
@@ -78,19 +74,19 @@
   transform: translateY(0);
 } */
 
-.examples-link {
+.examples__link {
   display: block;
   outline: 1px solid rgba(238, 238, 238, 1);
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.examples-link:hover,
-.examples-link:focus {
+.examples__link:hover,
+.examples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.examples .pretitle {
+.examples__name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -102,7 +98,7 @@
   margin-bottom: 4px;
 }
 
-.examples-text {
+.examples__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
@@ -115,12 +111,12 @@
 
 /* без использвания доп дива , создаем див и p тоже блочный */
 
-.examples-thumb {
+.examples__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-text {
+.overlay__text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -139,8 +135,8 @@
   padding: 63px 24px;
 }
 
-.examples-link:hover .overlay-text,
-.examples-link:focus .overlay-text {
+.examples__link:hover .overlay__text,
+.examples__link:focus .overlay__text {
   transform: translateY(0);
 }
 

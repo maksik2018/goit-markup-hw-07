@@ -48,9 +48,23 @@ p {
   overflow: hidden;
 }
 
-/* section {
-  outline: 1px solid green;
-} */
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.pretitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
 
 .container {
   width: 1200px;
@@ -59,6 +73,38 @@ p {
 }
 
 /* header start */
+.site-header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  display: inline-block;
+}
+
+.site-header--logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--left {
+  color: var(--primary-blue);
+}
+
+.logo--right {
+  color: var(--hdr-text-black);
+}
+
 .nav,
 .site-menu,
 .nav-contacts {
@@ -167,47 +213,11 @@ p {
   color: var(--primary-blue);
 }
 
-.site-header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  display: inline-block;
-}
-
-.site-header--logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.logo--left {
-  color: var(--primary-blue);
-}
-
-.logo--right {
-  color: var(--hdr-text-black);
-}
-
 .nav-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
   align-items: center;
 }
-
-/* .link .phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: center;
-} */
 
 /* header finish */
 
@@ -224,18 +234,9 @@ p {
   padding-bottom: 60px;
 }
 
-.footer-studio {
+.logo--footer {
   color: var(--primary-white);
 }
-
-/* .footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  display: inline-block;
-} */
 
 .address {
   font-weight: 400;
@@ -266,26 +267,30 @@ p {
   color: var(--primary-blue);
 }
 
-.logo--footer {
-  color: var(--primary-white);
-}
-
 .footer-icons {
   margin-left: 70px;
 }
 
-.footer.pretitle {
+.footer-icons__pretitle {
   color: var(--primary-white);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.footer-icons-list {
+.footer-icons__list {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-icons-links {
+.footer-icons__item {
+  margin-right: 10px;
+}
+
+.footer-icons__item:last-child {
+  margin-right: 0px;
+}
+
+.footer-icons__links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,30 +302,28 @@ p {
   transition: background 250ms var(--timing-function);
 }
 
-.footer-icons-links:hover,
-.footer-icons-links:focus {
+.footer-icons__links:hover,
+.footer-icons__links:focus {
   background: var(--primary-blue);
-}
-
-.footer-icons-item {
-  margin-right: 10px;
-}
-
-.footer-icons-item:last-child {
-  margin-right: 0px;
 }
 
 /* footer-subscribe */
 
-.footer-subscribe {
+.subscribe {
   margin-left: 105px;
 }
 
-.footer-data {
+.subscribe__pretitle {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe__wrap {
   display: flex;
 }
 
-.footer-input {
+.subscribe__input {
   padding: 15px 16px;
   margin-right: 12px;
   background: var(--bg-black);
@@ -333,7 +336,7 @@ p {
   outline: none;
 }
 
-.footer-input::placeholder {
+.subscribe__input::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -342,7 +345,7 @@ p {
   color: var(--ftr-text-grey-op60);
 }
 
-.footer-btn {
+.subscribe__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,12 +367,12 @@ p {
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.footer-btn:hover,
-.footer-btn:focus {
+.subscribe__btn:hover,
+.subscrine__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
-.send {
+.subscribe__icon {
   margin-left: 10px;
 }
