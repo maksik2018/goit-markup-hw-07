@@ -12,10 +12,14 @@
   padding-bottom: 25px;
 }
 
-.logo--left {
+.logo__text-left {
   color: var(--primary-blue);
 }
 
-.logo--right {
+.logo__text-right {
   color: var(--hdr-text-black);
+}
+
+.logo__text-footer {
+  color: var(--primary-white);
 }

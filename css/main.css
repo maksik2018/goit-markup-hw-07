@@ -384,12 +384,16 @@ img {
   padding-bottom: 25px;
 }
 
-.logo--left {
+.logo__text-left {
   color: var(--primary-blue);
 }
 
-.logo--right {
+.logo__text-right {
   color: var(--hdr-text-black);
+}
+
+.logo__text-footer {
+  color: var(--primary-white);
 }
 
 .nav,
@@ -520,10 +524,6 @@ img {
           align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.logo--footer {
-  color: var(--primary-white);
 }
 
 .address {
